@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "path": ".githooks"
+  },
+  "repos": [
+    {
+      "url": "https://github.com/montaguegabe/multi-rs",
+      "name": "multi-rs",
+      "description": "Rust rewrite of multi (CLI/core) — private remake"
+    },
+    {
+      "url": "https://github.com/montaguegabe/multi-rs-desktop",
+      "name": "multi-rs-desktop",
+      "description": "Tauri desktop for multi remake (Electron replacement) — private"
+    }
+  ]
+}
