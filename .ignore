@@ -1,0 +1,7 @@
+# BEGIN multi-managed: search-inside-gitignored-repos
+# Allow us to search inside these gitignored directories
+!/multi-rs/
+!/multi-rs
+!/multi-rs-desktop/
+!/multi-rs-desktop
+# END multi-managed: search-inside-gitignored-repos
