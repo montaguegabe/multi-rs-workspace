@@ -26,6 +26,7 @@ Reference (read-only): the original `multi` workspace checkout on the current ma
 
 - `multi-rs`: CLI/core implemented; `cargo test` passes on macOS and Linux.
 - `multi-rs-desktop`: Tauri 2 + React app implemented over `multi-core`; builds and runs on macOS. Not yet done: release signing/notarization, updater feed, Windows/Linux verification.
+- Ported (2026-11-01): `multi skills install [--dev]` from the Python CLI. `--dev` runs the `multi-skills` repo's `scripts/install-dev.sh` (from the BoilerSync `skills` template) to symlink the checkout into `~/.agents/skills` and `~/.claude/skills`; without it, `npx skills add` copies the published skills.
 - Parity gap (2026-11-01): the Python CLI gained `multi sync skills`, which links each sub-repo's `.agents/skills/<name>` into the root `.agents/skills` so Codex discovers them (Codex searches upward only; Claude Code already finds nested `.claude/skills`, so those are not linked). Port it to `multi-core`'s sync, and re-check both tools' discovery rules when doing so.
 
 ## Conventions
