@@ -12,4 +12,5 @@
 .vscode/tasks.json
 .vscode/launch.json
 .vscode/extensions.json
+AGENTS.override.md
 # END multi-managed: generated-files
